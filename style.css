@@ -1,0 +1,835 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+:root{
+    --My-font-01: 'Poppins', sans-serif;
+    --st-color: #001D3D;
+    --nd-color: #003566;
+    --rd-color: #FFC300;
+    --th-color: #f1c946;
+}
+
+@keyframes login-animation{
+    0%{
+        transform: rotate(0);
+        transform-origin: 0 100%;
+    }
+    100%{
+        transform: rotate(360deg);
+        transform-origin: 0 100%;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    background: linear-gradient(107.56deg, #001D3D 0%, #003566 100%);
+    font-family: var(--My-font-01);
+}
+
+/* Fonts Classes */
+
+.mini-font-white{
+    font-size: 14px;
+    background: linear-gradient(to bottom, #fff, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #ffffff50;
+    letter-spacing: .5px;
+}
+
+.container-section{
+    height: 100vh;
+    position: relative;
+}
+
+.nav-bar{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+/* Start Nav-bar */
+
+nav{
+    position: absolute;
+    width: 75%;
+    height: 60px;
+    top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo{
+    width: 15%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav .logo span{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    height: 25px;
+}
+
+nav ul li{
+    list-style: none;
+    height: 100%;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    
+    font-weight: 400;
+    font-size: 16px;
+}
+
+nav ul li{
+    position: relative;
+    overflow: hidden;
+}
+
+.a-home::after{
+    content: '';
+    width: 20px;
+    height: 2px;
+    background-color: var(--rd-color);
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+}
+
+nav ul li:not(.a-home)::after{
+    content: '';
+    width: 20px;
+    height: 2px;
+    background-color: var(--rd-color);
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+}
+
+nav ul li:hover::after{
+    width: 100%;
+    left: 0;
+    transition: 1s;
+}
+
+nav .login-signup{
+    width: 16%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .login-signup .login{
+    color: white;
+    font-size: 600;
+    width: 72px;
+    height: 35px;
+    background-color: #00264d;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+nav .login-signup .login div{
+    width: 67px;
+    height: 30px;
+    background-color: #00264d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+nav .login-signup .login::after{
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-color: var(--rd-color);
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: 0 100%;
+    visibility: hidden;
+}
+
+nav .login-signup .login:hover::after{
+    animation: login-animation 3s linear infinite;
+    visibility: visible;
+}
+
+nav .login-signup .signup{
+    width: 102px;
+    height: 35px;   
+    background-color: var(--rd-color);
+    color: var(--st-color);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+nav .login-signup .signup:hover{
+    outline: solid 1px var(--rd-color);
+    outline-offset: 4px;
+    transition: .3s;
+}
+
+nav .login-signup .signup,.login{
+    text-decoration: none;
+    
+}
+
+/* End Nav-bar */
+
+/* Start section-0 */
+
+.section-0{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    position: absolute;
+    bottom: 0;
+}
+
+.section-0 .sub-section-0{
+    width: 75%;
+    position: relative;
+    display: flex;
+}
+
+.section-0 .sub-section-0 .left-section{
+    width: 40%;
+}
+
+.section-0 .sub-section-0 .left-section h1{
+    
+    font-weight: 700;
+    font-size: 60px;
+    color: white;
+    border-bottom: solid 3px white;
+    text-transform: capitalize;
+    padding-bottom: 15px;
+    width: 87%;
+    line-height: 97%;
+}
+
+.section-0 .sub-section-0 .left-section .title-infos{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.section-0 .sub-section-0 .left-section .title-infos .info{
+    width: 22%;
+}
+
+.section-0 .sub-section-0 .left-section .title-infos span{
+    
+    font-size: 32px;
+    font-weight: 700;
+    color: white;   
+}
+
+.section-0 .sub-section-0 .left-section .title-infos p{
+    
+    font-size: 13px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.section-0 .sub-section-0 .left-section .call-to-action{
+    text-decoration: none;
+    color: var(--st-color);
+    background-color: var(--rd-color);
+    padding: 14px 17px;
+    border-radius: 5px;
+    
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    top: 350px;
+}
+
+.section-0 .sub-section-0 .left-section .call-to-action:hover{
+    outline: solid 1px var(--rd-color);
+    outline-offset: 4px;
+    transition: .3s;
+}
+
+.section-0 .sub-section-0 .right-section{
+    width: 60%;
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 10px;
+}
+
+.section-0 .sub-section-0 .right-section img{
+    width: 90%;
+}
+
+/* End section-0 */
+
+/* Start section-1 */
+
+.section-1{
+    width: 100%;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+}
+
+.section-1 .sub-section-1{
+    width: 75%;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.section-1 .sub-section-1 h3{
+    
+    color: var(--nd-color);
+    font-size: 32px;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 40px;
+} 
+
+.section-1 .sub-section-1 p{
+    
+    background: linear-gradient(to bottom, var(--st-color),var(--nd-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 15px;
+    width: 32%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 150%;
+    margin-top: 15px;
+}
+
+.section-1 .sub-section-1 .cards{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Start card */
+
+.section-1 .sub-section-1 .cards .card{
+    width: 30%;
+    height: 550px;
+    background-color: #efeeb449;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 15px 20px 15px 35px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.section-1 .sub-section-1 .cards .card > span,.right-card > span{
+    
+    font-size: 12px;
+    background: linear-gradient(135deg, var(--rd-color), #f8deab);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.section-1 .sub-section-1 .cards .card h4,.right-card h4{
+    
+    font-size: 24px;
+    color: var(--rd-color);
+    width: 90%;
+    line-height: 150%;
+}
+
+.section-1 .sub-section-1 .cards .card ul,.right-card ul{
+    margin-left: 15px;
+    line-height: 175%;
+}
+
+.section-1 .sub-section-1 .cards .card ul li,.right-card ul li{
+    
+    font-size: 14px;
+    color: var(--nd-color);
+}
+
+.section-1 .sub-section-1 .cards .card a,.right-card a{
+    
+    font-size: 12px;
+    background: linear-gradient(135deg, var(--rd-color), #f8deab);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.section-1 .sub-section-1 .cards .card .visa-card,.right-card .visa-card{
+    width: 200px;
+    height: 110px;
+    background: linear-gradient(135deg, var(--rd-color), #f8deab);
+    border-radius: 5px;
+}
+
+.section-1 .sub-section-1 .cards .card .visa-card .visa,.right-card .visa-card .visa{
+    display: block;
+    color: white;
+    text-transform: uppercase;
+    
+    font-weight: 600;
+    font-style: italic;
+    margin: 15px 0 10px 20px;
+}
+
+.section-1 .sub-section-1 .cards .card .visa-card .total-balance,.right-card .visa-card .total-balance{
+    display: block;
+    color: white;
+    
+    font-weight: 400;
+    font-size: 12px;
+    margin: 22px 0 10px 20px;
+}
+
+.section-1 .sub-section-1 .cards .card .visa-card .balance,.right-card .visa-card .balance{
+    display: block;
+    color: white;
+    
+    font-weight: 600;
+    font-size: 15px;
+    margin: 12px 0 10px 20px;
+}
+
+/* End card */
+
+/* End section-1 */
+
+/* Start section-2 */
+
+.section-2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.section-2 .sub-section-2{
+    width: 75%;
+    height: 325px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-2 .sub-section-2 .left-section{
+    width: 40%;
+}
+
+.section-2 .sub-section-2 .left-section .top-section h3{
+    
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.section-2 .sub-section-2 .left-section .top-section p{
+    
+    font-size: 14px;
+    letter-spacing: .5px;
+    background: linear-gradient(to bottom, #fff, #fff );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 150%;
+}
+
+.section-2 .sub-section-2 .left-section .bottom-section{
+    margin-top: 70px;
+}
+
+.section-2 .sub-section-2 .left-section .bottom-section .sub-bottom-section-top,.sub-bottom-section-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-2 .sub-section-2 .left-section .bottom-section .sub-bottom-section-bottom{
+    margin-top: 30px;
+}
+
+.section-2 .sub-section-2 .left-section .bottom-section .sub-bottom-section-top span:first-child,.sub-bottom-section-bottom span:first-child{
+    
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400;
+}
+
+.section-2 .change-1,.change-2{
+    display: flex;
+}
+
+.section-2 .icon{
+    width: 12px;
+    height: 18px;
+    background-color: orange;
+    clip-path: polygon(50% 50%, 100% 50%, 50% 100%, 0 50%);
+    margin: 3px 0 0 10px;
+}
+
+.section-2 .sub-section-2 .left-section .bottom-section .sub-bottom-section-top .change-1 p,.change-2 p,.sub-bottom-section-bottom .change-1 p,.change-2 p{
+    
+    font-size: 28px;
+    color: white;
+    font-weight: 400;
+}
+
+.sub-section-2 .right-section{
+    width: 30%;
+    float: right;
+}
+
+.sub-section-2 .right-section > span:first-child{
+    
+    font-size: 14px;
+    color: white;
+    display: block;
+}
+
+.sub-section-2 .right-section > span:not(:first-child){
+    
+    font-size: 14px;
+    color: white;
+    display: block;
+    margin-top: 35px;
+}
+
+.sub-section-2 .right-section div{
+    width: 75%;
+    border: solid 2px white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 0;
+    margin-top: 10px;
+}
+
+.sub-section-2 .right-section div span{
+    
+    font-size: 24px;
+    color: white;
+}
+
+.sub-section-2 .right-section div p{
+    
+    font-size: 24px;
+    color: white;
+    font-weight: 400;
+}
+
+.sub-section-2 .right-section a{
+    
+    font-size: 15px;
+    color: var(--nd-color);
+    text-decoration: none;
+    background-color: var(--rd-color);
+    padding: 20px 20px;
+    border-radius: 5px;
+    margin-top: 55px;
+    display: block;
+    width: 156px;
+}
+
+.sub-section-2 .right-section a:hover{
+    outline: solid 2px var(--rd-color);
+    outline-offset: 4px;
+    transition: .3s;
+}
+/* End section-2 */
+
+/* Start section-3 */
+
+.section-3{
+    width: 100%;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+}
+
+.section-3 .sub-section-3{
+    width: 75%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.section-3 .sub-section-3 > h3{
+    
+    color: var(--nd-color);
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+} 
+
+.section-3 .sub-section-3 > p{
+    
+    background: linear-gradient(to bottom, var(--st-color),var(--nd-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 15px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 150%;
+    margin-top: 15px;
+}
+
+.body-section-3{
+    width: 100%;
+    height: 470px;
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.body-section-3 .col-middle-sections{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-section-3 .col-middle-sections img{
+    height: 200px;
+}
+
+.body-section-3 .col-sections{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.body-section-3 .Bank-Transfer-card:not(.under-blue-one){
+    width: 330px;
+    height: 200px;
+    margin-right: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    background: linear-gradient(to bottom, var(--st-color),var(--nd-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 60px 30px 45px 45px
+}
+
+.body-section-3 .under-blue-one{
+    width: 330px;
+    height: 200px;
+    margin-left: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    background: linear-gradient(to bottom, var(--st-color),var(--nd-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 60px 30px 45px 45px
+}
+
+.Blue-Bank-Transfer-card{
+    width: 330px;
+    height: 200px;
+    margin-left: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    
+    background-color: #003566;
+    color: white;
+    padding: 60px 30px 45px 45px
+}
+
+.body-section-3 .col-sections h4{
+    font-size: 20px;
+    width: 200px;
+}
+
+.body-section-3 .col-sections p{
+    font-size: 13px;
+    width: 240px;
+    margin-top: 10px;
+    letter-spacing: .1px;
+}
+
+.section-4{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0 80px;
+    color: white;
+}
+
+.sub-section-4{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Brand-Mail-section{
+    width: 45%;
+}
+
+.Brand-Mail-section .logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Brand-Mail-section .logo span{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 26px;
+    margin-left: 10px;
+}
+
+.Brand-Mail-section .email-description{
+    width: 270px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.email-section{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.Brand-Mail-section .input-email{
+    width: 350px;
+    height: 50px;
+    outline-style: none;
+    border-style: none;
+    background-color: #E5E5E5;
+    border-radius: 3px;
+    padding-left: 30px;
+    color: var(--nd-color);
+}
+
+.Brand-Mail-section .submit-email{
+    background-color: var(--rd-color);
+    color: var(--st-color);
+    height: 50px;
+    width: 70px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.Brand-Mail-section .submit-email img{
+    width: 40%;
+}
+
+.Brand-Mail-section .privacy-polity{
+    width: 350px;
+    font-size: 12px;
+    letter-spacing: .2px;
+    margin-top: 20px;
+}
+
+.input-email::placeholder{
+    background: linear-gradient(to bottom, var(--st-color),var(--nd-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
+    letter-spacing: .5px;
+}
+
+.list-menu-section{
+    display: flex;
+    width: 330px;
+}
+
+.list-menu-section ul li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.list-menu-section ul li:first-child{
+    font-size: 16px;
+}
+
+.list-menu-section ul li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.list-menu-section .Pages-list{
+    margin-left: 160px;
+}
+
+footer{
+    margin-top: 15px;
+    margin-left: 22%;
+}
+
+.social-media{
+    display: inline-block;
+    margin-left: 80px;
+}
+
+.social-media img{
+    height: 15px;
+    margin-left: 25px;
+}
+
+.social-media img:hover{
+    filter:invert(100%);
+    transition: .1s;
+    cursor: pointer;
+}
+
+
+
