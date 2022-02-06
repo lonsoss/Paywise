@@ -773,9 +773,9 @@ nav .login-signup .signup,.login{
 }
 
 .Brand-Mail-section .privacy-polity{
-    width: 350px;
+    width: 360px;
     font-size: 12px;
-    letter-spacing: .2px;
+    letter-spacing: .8px;
     margin-top: 20px;
 }
 
@@ -784,7 +784,7 @@ nav .login-signup .signup,.login{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 1;
-    letter-spacing: .5px;
+    letter-spacing: 1px;
 }
 
 .list-menu-section{
