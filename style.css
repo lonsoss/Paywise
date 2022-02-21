@@ -166,7 +166,7 @@ nav .login-signup .login div{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
+    border-radius: 4px;
     z-index: 1;
 }
 
