@@ -73,7 +73,7 @@ nav{
 }
 
 nav .logo{
-    width: 15%;
+    width: 170px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -90,7 +90,7 @@ nav ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 30%;
+    width: 340px;
     height: 25px;
 }
 
@@ -139,7 +139,7 @@ nav ul li:hover::after{
 }
 
 nav .login-signup{
-    width: 16%;
+    width: 185px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -147,7 +147,6 @@ nav .login-signup{
 
 nav .login-signup .login{
     color: white;
-    font-size: 600;
     width: 72px;
     height: 35px;
     background-color: #00264d;
@@ -354,7 +353,7 @@ nav .login-signup .signup,.login{
 /* Start card */
 
 .section-1 .sub-section-1 .cards .card{
-    width: 30%;
+    width: 340px;
     height: 550px;
     background-color: #efeeb449;
     display: flex;
